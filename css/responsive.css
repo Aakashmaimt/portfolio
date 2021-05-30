@@ -1,0 +1,188 @@
+.site-main-wrapper{
+    position: relative;
+}
+.hamberger{
+    position: absolute;
+    top: 30px;
+    right: 40Px;
+    z-index: 11;
+    background: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+.mobile-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    background: var(--light);
+    width: 100vw;
+    height: 50%;
+    padding: 5rem 2rem 2rem 2rem;
+    cursor: pointer;
+    transform: translateY(-100%);
+    transition: all .5s ease;
+}
+.open{
+    transform: translateY(0);
+}
+.close{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    border: none;
+    outline: none;
+    background: none;
+    color: red;
+}
+.mobile-nav ul{
+    list-style-type: none;
+}
+.mobile-nav ul li{
+    margin-bottom: 1rem;
+}
+.mobile-nav ul a{
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: 1rem;
+}
+@media (max-width:1025px) {
+    header #main-nav{
+        display: none;
+    }
+    .hamberger{
+        display: flex;
+    }
+    .hero .right h1 {
+        font-size: 3rem;
+    }
+    header {
+        clip-path: polygon(0 0,100% 0,100% 100%,75% 94%,0 100%);
+    }
+    .boy2 {
+        height: 40vh;
+        width: 25vw;
+    }
+    section.services .card-wrapper .card i {
+        top: -1.5rem;
+        width: 9vw;
+        height: 8vh;
+        padding-top: 0.7rem;
+    }
+    section.services .card-wrapper{
+        grid-template-columns: 1fr 1fr;
+    }
+    section.work .card-wrapper {
+        grid-template-columns: repeat(2,1fr);
+    }
+    section.blog .card-wrapper {
+        grid-template-columns: repeat(1,1fr);
+    }
+    section.blog {
+        clip-path: polygon(0 0,100% 0,100% 100%,72% 97%,0 100%);
+    }
+    section.contact .card-wrapper {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 1rem;
+    }
+    section {
+        padding: 4rem 0;
+    }
+}
+
+@media (max-width:540px) {
+    header #main-nav{
+        display: none;
+    }
+    .hamberger{
+        display: flex;
+    }
+    section{
+        padding: 3rem 0;
+    }
+    .container{
+        max-width: 95vw;
+        padding: 0 3vw;
+        margin: 0 auto;
+    }
+    header{
+        height: 98vh;
+        clip-path: polygon(0 0,100% 0,100% 100%,75% 95%,0 100%);
+    }
+    .main-img{
+        display: none;
+    }
+    .hero .right{
+        padding-top: 15vh;
+    }
+    .hero .right h1 {
+        font-size: 3rem;
+    }
+    .hero{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 5vw;
+    }
+    section.about h1 ,section.about h1+h3{
+        display: flex;
+        justify-content: center;
+    }
+    section.about .container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .boy2{
+        width: 90vw;
+        margin-bottom: 4vh;
+    }
+    section.about .social a i{
+        padding: .6rem;
+    }
+    .social{
+        justify-content: center;
+    }
+    section.services .card-wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 4rem;
+    }
+    .slide {
+        text-align: center;
+        padding: 0 1rem;
+        margin-bottom: 4rem;
+    }
+    section.work .card-wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 3rem;
+    }
+    section.blog .card-wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 3rem;
+    }
+    section.contact .card-wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    section.contact .input-wrap{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    section.services .card-wrapper .card i {
+        top: -2rem;
+        width: 16vw;
+        height: 8vh;
+        padding-top: .7rem;
+    }
+    section.freelancer{
+        clip-path: polygon(0 0,100% 0,100% 100%,70% 95%,0 100%);
+    }
+    section.blog{
+        background-color: var(--secondary);
+        clip-path: polygon(0 0,100% 0,100% 100%,70% 98%,0 100%);
+    }
+}
